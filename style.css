@@ -8,21 +8,23 @@ body {
 
 .container {
     display: flex;
+    position: fixed;
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(to right, white 66%, #bbdbff 30%)
 }
 
 .title {
-    flex: 2; /*2/3 of conatiner*/
+    flex: 2 1 0px; /*2/3 of conatiner*/
     padding: 20px;
     box-sizing: border-box;
     background: transparent;
 }
 
 .image-section {
-    flex: 1; /* 1/3 of container*/
+    flex: 1 1 0px; /* 1/3 of container*/
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -32,10 +34,17 @@ body {
 }
 
 .image-section img {
-    width: 100%;
+    width: 100%;   
     max-width: 200px;
     height: auto;
+    margin-left: 170%;
     align-self: flex-start;
+    align-items: center;
     mix-blend-mode: multiply;
     filter: contrast(1.1) brightness(1.2);
+}
+
+.Contact {
+    flex: 1;
+    margin-top: 300px;
 }
